@@ -1,4 +1,3 @@
-from pickle import FALSE
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
@@ -76,4 +75,4 @@ def saveFile(request):
     file = request.FILES['myFile ']
     file_name = default_storage.save(file.name, file)
 
-    return JsonResponse(file_name, safe=FALSE)
+    return JsonResponse(file_name, safe=False)
