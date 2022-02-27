@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Table } from "react-bootstrap";
 import { Button, ButtonToolbar } from "react-bootstrap";
-import {AddDepModal} from "./AddDepModal"
+import { AddDepModal } from "./AddDepModal"
 
 export class Department extends Component {
     
@@ -49,9 +49,11 @@ export class Department extends Component {
                 </Table>
                <ButtonToolbar>
                     <Button variant="primary " onClick={()=>this.setState({addModalShow : true})}>Add Department</Button>
+                    <AddDepModal show={this.state.addModalShow} onHide={addModalClose}/>
                </ButtonToolbar>
+               
             </div>
         )
     }
 }
-50 :18 
+ 

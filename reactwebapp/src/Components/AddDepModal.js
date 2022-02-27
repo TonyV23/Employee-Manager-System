@@ -4,9 +4,11 @@ import { Modal,Button,Row, Col,Form, FormGroup } from "react-bootstrap";
 export class AddDepModal extends Component{
     constructor(props){
         super(props);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
+
     handleSubmit(event){
-        event.preventdefault();
+        event.preventDefault();
         fetch(process.env.REACT_APP_API + "department",{
             method : "POST",
             headers :{
