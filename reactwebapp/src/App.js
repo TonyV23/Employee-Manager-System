@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <h3 className = "m-3 d-flex justify-content-center"> React Js</h3>
+        <h3 className = "m-3 d-flex justify-content-center"> Developed By Tony Group </h3>
         <Navigation/>
         <Switch>
           <Route path="/" component ={Home} exact />
